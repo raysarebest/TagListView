@@ -27,7 +27,7 @@ class ViewController: UIViewController, TagListViewDelegate {
         tagListView.addTag("On tap will be removed").onTap = { [weak self] tagView in
             self?.tagListView.removeTagView(tagView)
         }
-        
+
         let tagView = tagListView.addTag("gray")
         tagView.tagBackgroundColor = UIColor.gray
         tagView.onTap = { tagView in
